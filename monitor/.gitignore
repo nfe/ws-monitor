@@ -1,0 +1,7 @@
+.DS_Store
+.gulp*
+
+node_modules/
+build/
+app/**/*.js
+test/*.js

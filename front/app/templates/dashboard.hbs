@@ -1,0 +1,26 @@
+<h4>{{content.length}} serviços monitorados</h4>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th width="40"></th>
+      <th>Prefeitura</th>
+      <th>Número de testes</th>
+      <th>Média de resposta (ms)</th>
+      <th>Última resposta (ms)</th>
+      <th>Mudança de status</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each item in content}}
+    <tr>
+      <td>{{fa-icon item.icon}}</td>
+      <td>{{item.description}}</td>
+      <td>{{item.count}}</td>
+      <td>{{item.avgResponseTime}}</td>
+      <td>{{item.lastResponseTime}}</td>
+      <td>{{item.statusChangedOn}}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>

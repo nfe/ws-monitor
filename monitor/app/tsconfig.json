@@ -1,0 +1,29 @@
+{
+    "version": "1.4.1",
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "declaration": false,
+        "noImplicitAny": false,
+        "removeComments": true,
+        "noLib": false
+    },
+    "filesGlob": [
+        "./**/*.ts",
+        "!./node_modules/**/*.ts"
+    ],
+    "files": [
+        "./console-reporter.ts",
+        "./firebase-reporter.ts",
+        "./index.ts",
+        "./lib/HttpClient.ts",
+        "./lib/HttpResponse.ts",
+        "./lib/IHttpClient.ts",
+        "./models/measurement.ts",
+        "./models/sample.ts",
+        "./models/target.ts",
+        "./rx.ts",
+        "./sampler.ts",
+        "./sensor.ts"
+    ]
+}
