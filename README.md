@@ -1,4 +1,4 @@
-# MON-NFSE
+# NFSE-WS-MONITOR
 
 Um projeto para monitoramento dos web services das prefeituras.
 [Acompanhe em tempo real o status dos serviços](http://monitor.nfe.io)
