@@ -1,6 +1,7 @@
 # MON-NFSE
 
 Um projeto para monitoramento dos web services das prefeituras.
+[Acompanhe em tempo real o status dos serviços](http://monitor.nfe.io)
 
 ## Monitoring App (/monitor)
 
