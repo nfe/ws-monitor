@@ -57,7 +57,7 @@ class Sampler {
           })
           .fail(e => {
 
-            if (e.elapsedTime === null) {
+            if (e.elapsedTime === null || e.elapsedTime === undefined) {
               sample.Elapsed = new Date(Date.now() - start).getMilliseconds();
             }
             else {
