@@ -1,5 +1,7 @@
 .DS_Store
 .gulp*
+.env
+*.tmp
 
 node_modules/
 build/
