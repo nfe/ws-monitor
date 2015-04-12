@@ -1,0 +1,67 @@
+[
+  {
+    "url": "https://bhissdigital.pbh.gov.br/bhiss-ws/nfse?wsdl",
+    "name": "mg_belo_horizonte",
+    "description": "MG / Belo Horizonte"
+  },
+  {
+    "url": "https://nfe.prefeitura.sp.gov.br/ws/lotenfe.asmx?wsdl",
+    "name": "sp_sao_paulo",
+    "description": "SP / São Paulo"
+  },
+  {
+    "url": "https://notacarioca.rio.gov.br/WSNacional/nfse.asmx?wsdl",
+    "name": "rj_rio_de_janeiro",
+    "description": "RJ / Rio de Janeiro"
+  },
+  {
+    "url": "https://producao.ginfes.com.br/ServiceGinfesImpl?wsdl",
+    "name": "ginfes",
+    "description": "GINFES"
+  },
+  {
+    "url": "http://iss.fortaleza.ce.gov.br/grpfor-iss/ServiceGinfesImplService?wsdl",
+    "name": "ce_fortaleza",
+    "description": "CE / Fortaleza"
+  },
+  {
+    "url": "http://www.issdigitalsod.com.br/WsNFe2/LoteRps.jws?wsdl",
+    "name": "sp_sorocaba",
+    "description": "SP / Sorocaba"
+  },
+  {
+    "url": "http://www.issdigitalbel.com.br/WsNFe2/LoteRps.jws?wsdl",
+    "name": "pa_belem",
+    "description": "PA / Belem"
+  },
+  {
+    "url": "http://nfse.campinas.sp.gov.br/WsNFe2/LoteRps.jws?wsdl",
+    "name": "sp_campinas",
+    "description": "SP / Campinas"
+  },
+  {
+    "url": "http://nfse.pmcg.ms.gov.br/WsNFe2/LoteRps.jws?wsdl",
+    "name": "ms_campo_grande",
+    "description": "MS / Campo Grande"
+  },
+  {
+    "url": "http://udigital.uberlandia.mg.gov.br/WsNFe2/LoteRps.jws?wsdl",
+    "name": "mg_uberlandia",
+    "description": "MG / Uberlândia"
+  },
+  {
+    "url": "http://www.issdigitalthe.com.br/WsNFe2/LoteRps.jws?wsdl",
+    "name": "pi_teresina",
+    "description": "PI / Teresina"
+  },
+  {
+    "url": "http://www.notamaisfacil.novaiguacu.rj.gov.br/WsNFe2/LoteRps.jws?wsdl",
+    "name": "rj_nova_iguacu",
+    "description": "RJ / Nova Iguaçu"
+  },
+  {
+    "url": "http://www.issdigitalslz.com.br/WsNFe2/LoteRps.jws?wsdl",
+    "name": "ma_sao_luis",
+    "description": "MA / São Luis"
+  }
+]

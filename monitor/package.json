@@ -21,6 +21,7 @@
   },
   "scripts": {
     "main": "gulp buildrun",
-    "test": "gulp test"
+    "test": "gulp test",
+    "start": "gulp buildrun"
   }
 }

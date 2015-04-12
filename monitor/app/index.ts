@@ -62,10 +62,10 @@ var startProcess = function() {
 // download targets.json from url
 console.log('wsmon: downloading targets from "' + _targetsUrl + '"...');
 request(_targetsUrl).
-pipe(fs.createWriteStream(_targetsPath)).
+pipe(fs.createWriteStream(_targetsPath, { flags: "w+" })).
 on('finish', startProcess);
 
 // download certificate from url
 console.log('wsmon: downloading certificate from "' + _certificateUrl + '"...');
 request(_certificateUrl).
-pipe(fs.createWriteStream(_certificatePath));
+pipe(fs.createWriteStream(_certificatePath, { flags: "w+" }));
