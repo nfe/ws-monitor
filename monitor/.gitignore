@@ -2,7 +2,9 @@
 .gulp*
 .env
 *.tmp
+*.log
 
+.azk/
 node_modules/
 build/
 app/**/*.js

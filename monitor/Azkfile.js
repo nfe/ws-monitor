@@ -16,13 +16,9 @@ systems({
     workdir: "/azk/#{manifest.dir}",
     shell: "/bin/bash",
     command: "npm start",
-    wait: {"retry": 20, "timeout": 1000},
+    wait: {"retry": 20, "timeout": 10000},
     mounts: {
       '/azk/#{manifest.dir}': path("."),
-    },
-    scalable: {"default": 2},
-    http: {
-      domains: [ "#{system.name}.#{azk.default_domain}" ]
     },
     envs: {
       // set instances variables
@@ -30,6 +26,3 @@ systems({
     },
   },
 });
-
-
-
