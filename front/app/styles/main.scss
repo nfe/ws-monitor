@@ -76,6 +76,10 @@ a:focus {
   border-radius: 0 0 5px 5px;
 }
 
+table tr td.center {
+  text-align: center;
+}
+
 @media (min-width: 768px) {
   .nav-justified {
     max-height: 52px;

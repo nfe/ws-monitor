@@ -10,7 +10,7 @@ export default DS.Model.extend({
   lastResponseTime: DS.attr('number'),
   totalResponseTime: DS.attr('number'),
   avgResponseTime: function() {
-    return this.get('totalResponseTime') / this.get('count');
+    return parseInt(this.get('totalResponseTime') / this.get('count'), 10);
   }.property('totalResponseTime', 'count'),
   icon: function() {
     if (this.get("state") === "UP") {
