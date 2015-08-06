@@ -24,7 +24,7 @@ class FirebaseReporter implements Rx.Observer {
 
     var state = arg.Sample.StatusCode != 200 ? "0" : "1";
 
-    var data = arg.Target.Name+"_response value="+arg.Sample.Elapsed+",state="+ state;
+    var data = "response_time,name=" + arg.Target.Name + " value=" + arg.Sample.Elapsed + ",state=" + state;
     this._http.post({
       url: this._baseUrl,
       body: data
