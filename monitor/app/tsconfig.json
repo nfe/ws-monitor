@@ -16,6 +16,7 @@
         "./console-reporter.ts",
         "./firebase-reporter.ts",
         "./index.ts",
+        "./influxdb-reporter.ts",
         "./lib/HttpClient.ts",
         "./lib/HttpResponse.ts",
         "./lib/IHttpClient.ts",

@@ -5,7 +5,7 @@ import request = require('request');
 
 import Sensor = require('./sensor');
 import ConsoleReporter = require('./console-reporter');
-import FirebaseReporter = require('./firebase-reporter');
+import InfluxDbReporter = require('./influxdb-reporter');
 import Target = require('./models/target');
 
 var _certificatePath = "cert.tmp",
@@ -13,11 +13,11 @@ var _certificatePath = "cert.tmp",
     _interval = process.env['NFE_INTERVAL'],
     _certificateUrl = process.env['NFE_CERTIFICATE_URL'],
     _certificatePassword = process.env['NFE_CERTIFICATE_PASSWORD'],
-    _firebaseBaseUrl = process.env['NFE_FIREBASE_URL'],
-    _targetsUrl = process.env['NFE_TARGETS_URL'];
+    _targetsUrl = process.env['NFE_TARGETS_URL'],
+    _influxdbUrl = process.env['NFE_INFLUXDB_URL'];
 
 console.log('wsmon: env NFE_CERTIFICATE_URL ', _certificateUrl);
-console.log('wsmon: env NFE_FIREBASE_URL ', _firebaseBaseUrl);
+console.log('wsmon: env NFE_INFLUXDB_URL ', _influxdbUrl);
 console.log('wsmon: env NFE_INTERVAL ', _interval);
 
 // cleaning up temps
@@ -33,7 +33,7 @@ var startProcess = function() {
     console.log('wsmon: loading target from "' + _targetsPath + '"...');
     var targets = JSON.parse(fs.readFileSync(_targetsPath, 'utf8'));
     var consoleReporter = new ConsoleReporter();
-    var firebaseReporter = new FirebaseReporter(_firebaseBaseUrl);
+    var influxdbReporter = new InfluxDbReporter(_influxdbUrl);
 
     console.log('wsmon: creating sensors...');
     targets.forEach(t => {
@@ -49,7 +49,7 @@ var startProcess = function() {
 
       var _sensor = new Sensor(target);
       _sensor.registerObserver(consoleReporter);
-      _sensor.registerObserver(firebaseReporter);
+      _sensor.registerObserver(influxdbReporter);
       _sensor.start();
 
     });

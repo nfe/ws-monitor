@@ -10,6 +10,8 @@ interface IHttp {
     get(options?: request.Options): Q.Promise<HttpResponse>;
 
     put(options?: request.Options): Q.Promise<HttpResponse>;
+
+    post(options?: request.Options): Q.Promise<HttpResponse>;
 }
 
 export = IHttp;

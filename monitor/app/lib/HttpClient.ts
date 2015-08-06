@@ -32,6 +32,10 @@ class Http implements IHttp {
   put(options: request.Options = {}): Q.Promise<HttpResponse> {
     return this.handle('put', options);
   }
+
+  post(options: request.Options = {}): Q.Promise<HttpResponse> {
+    return this.handle('post', options);
+  }
 }
 
 export = Http;
