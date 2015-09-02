@@ -1,6 +1,7 @@
 import Rx = require('./rx');
 import Sampler = require('./sampler');
 import Target = require('./models/target');
+import Sample = require('./models/sample');
 import Measurement = require('./models/measurement');
 
 class Sensor extends Rx.Observable {
@@ -12,6 +13,7 @@ class Sensor extends Rx.Observable {
     super();
     this._measurement = new Measurement();
     this._measurement.Target = target;
+    this._measurement.Sample = new Sample();
 
     this._sampler = new Sampler(this._measurement.Target);
   }
@@ -28,7 +30,7 @@ class Sensor extends Rx.Observable {
 
   private do(instance : Sensor) {
     instance._sampler
-            .sample()
+            .sample(instance._measurement.Sample)
             .then(function(sample) {
 
               instance._measurement.IsOK = sample.StatusCode === 200;

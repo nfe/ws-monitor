@@ -4,7 +4,7 @@ class Sample
   public StatusCode : number;
   public Elapsed : number;
 
-  constructor(timestamp: Date, elapsed: number, statusCode: number) {
+  constructor(timestamp: Date = null, elapsed: number = null, statusCode: number = null) {
       this.Timestamp = timestamp;
       this.StatusCode = statusCode;
       this.Elapsed = elapsed;

@@ -30,18 +30,24 @@ class Sampler {
     };
   }
 
-  public sample() : Q.Promise<Sample> {
-    var start = new Date(Date.now());
+  public sample(sample : Sample) : Q.Promise<Sample> {
+    sample.Timestamp = new Date(Date.now());
     var self = this;
     return Q.Promise<Sample>(function(resolve, reject, notify)
     {
       self._http
           .get(self._options)
           .then(d => {
-            resolve(new Sample(start, d.elapsedTime, d.statusCode)); // return promise
+            sample.Elapsed = d.elapsedTime;
+            sample.StatusCode = d.statusCode;
+
+            resolve(sample); // return promise
           })
           .fail(e => {
-            resolve(new Sample(start, 0, 500)); // return promise
+            sample.Elapsed = 0;
+            sample.StatusCode = 500;
+
+            resolve(sample); // return promise
           });
 
     });
