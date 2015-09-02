@@ -31,28 +31,17 @@ class Sampler {
   }
 
   public sample() : Q.Promise<Sample> {
-
-    var sample = new Sample();
-    var start = Date.now();
-    sample.Timestamp = new Date(start);
-
+    var start = new Date(Date.now());
     var self = this;
-
     return Q.Promise<Sample>(function(resolve, reject, notify)
     {
       self._http
           .get(self._options)
           .then(d => {
-            sample.Elapsed = d.elapsedTime;
-            sample.StatusCode = d.statusCode;
-
-            resolve(sample); // return promise
+            resolve(new Sample(start, d.elapsedTime, d.statusCode)); // return promise
           })
           .fail(e => {
-            sample.Elapsed = 0;
-            sample.StatusCode = 500;
-
-            resolve(sample); // return promise
+            resolve(new Sample(start, 0, 500)); // return promise
           });
 
     });
