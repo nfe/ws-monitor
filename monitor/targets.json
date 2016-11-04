@@ -1,65 +1,78 @@
 [
   {
+    "code": 3106200,
     "url": "https://bhissdigital.pbh.gov.br/bhiss-ws/nfse?wsdl",
     "name": "mg_belo_horizonte",
     "description": "MG / Belo Horizonte"
   },
   {
+    "code": 3550308,
     "url": "https://nfe.prefeitura.sp.gov.br/ws/lotenfe.asmx?wsdl",
     "name": "sp_sao_paulo",
     "description": "SP / São Paulo"
   },
   {
+    "code": 3304904,
     "url": "https://notacarioca.rio.gov.br/WSNacional/nfse.asmx?wsdl",
     "name": "rj_rio_de_janeiro",
     "description": "RJ / Rio de Janeiro"
   },
   {
+    "code": 9900001,
     "url": "https://producao.ginfes.com.br/ServiceGinfesImpl?wsdl",
     "name": "ginfes",
     "description": "GINFES"
   },
   {
+    "code": 2304400,
     "url": "http://iss.fortaleza.ce.gov.br/grpfor-iss/ServiceGinfesImplService?wsdl",
     "name": "ce_fortaleza",
     "description": "CE / Fortaleza"
   },
   {
+    "code": 3552205,
     "url": "http://www.issdigitalsod.com.br/WsNFe2/LoteRps.jws?wsdl",
     "name": "sp_sorocaba",
     "description": "SP / Sorocaba"
   },
   {
+    "code": 1501402,
     "url": "http://www.issdigitalbel.com.br/WsNFe2/LoteRps.jws?wsdl",
     "name": "pa_belem",
     "description": "PA / Belem"
   },
   {
+    "code": 3509502,
     "url": "http://nfse.campinas.sp.gov.br/WsNFe2/LoteRps.jws?wsdl",
     "name": "sp_campinas",
     "description": "SP / Campinas"
   },
   {
+    "code": 5002704,
     "url": "http://nfse.pmcg.ms.gov.br/WsNFe2/LoteRps.jws?wsdl",
     "name": "ms_campo_grande",
     "description": "MS / Campo Grande"
   },
   {
+    "code":3170206,
     "url": "http://udigital.uberlandia.mg.gov.br/WsNFe2/LoteRps.jws?wsdl",
     "name": "mg_uberlandia",
     "description": "MG / Uberlândia"
   },
   {
+    "code": 2211001,
     "url": "http://www.issdigitalthe.com.br/WsNFe2/LoteRps.jws?wsdl",
     "name": "pi_teresina",
     "description": "PI / Teresina"
   },
   {
+    "code": 3303500,
     "url": "http://www.notamaisfacil.novaiguacu.rj.gov.br/WsNFe2/LoteRps.jws?wsdl",
     "name": "rj_nova_iguacu",
     "description": "RJ / Nova Iguaçu"
   },
   {
+    "code": 2111300,
     "url": "http://www.issdigitalslz.com.br/WsNFe2/LoteRps.jws?wsdl",
     "name": "ma_sao_luis",
     "description": "MA / São Luis"
