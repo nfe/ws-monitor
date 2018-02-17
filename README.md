@@ -19,7 +19,7 @@ This project uses [gulp](http://gulpjs.com/) as its build system.
 
 ### Testing
 
-This project usings [mocha](http://visionmedia.github.io/mocha/) for unit testing. Install mocha:
+This project usings [mocha](http://mochajs.org/) for unit testing. Install mocha:
 
 - Install mocha: `$ npm install -g mocha`
 
