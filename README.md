@@ -1,7 +1,9 @@
-# NFSE-WS-MONITOR
+# Criamos um novo projeto o Caiu.lá
+Para ver o novo projeto de [Monitoramento dos serviços de emissão de NFS-e](https://caiu.la)
+
+# NFSE-WS-MONITOR (descontinuado)
 
 Um projeto para monitoramento dos web services das prefeituras.
-[Acompanhe em tempo real o status dos serviços](http://monitor.nfe.io)
 
 ## Monitoring App (/monitor)
 
